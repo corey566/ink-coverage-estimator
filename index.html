@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Ink Coverage and Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>PDF Ink Coverage and Cost Calculator</h1>
+
+        <!-- File upload -->
+        <input type="file" id="pdfInput" accept=".pdf" />
+
+        <div id="pdfContainer">
+            <!-- PDF will be rendered here -->
+            <canvas id="pdfCanvas"></canvas>
+        </div>
+
+        <div class="controls">
+            <label for="pageNumber">Select Page Number:</label>
+            <input type="number" id="pageNumber" min="1" value="1">
+            <button onclick="calculateCurrentPage()">Calculate Current Page</button>
+        </div>
+
+        <table id="inkTable">
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody id="inkTableBody">
+                <!-- Ink info will be filled here -->
+            </tbody>
+        </table>
+
+        <div class="controls">
+            <button onclick="calculatePrice()">Calculate Price for Current Page</button>
+            <button onclick="calculateDocumentPrice()">Calculate Price for Entire Document</button>
+        </div>
+
+        <div id="priceResult">
+            <!-- Price result will appear here -->
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

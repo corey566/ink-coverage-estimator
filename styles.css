@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#pdfContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.controls {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+#inkTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#inkTable th,
+#inkTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#priceResult {
+    text-align: center;
+    margin-top: 20px;
+}
